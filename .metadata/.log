@@ -1,0 +1,117 @@
+!SESSION 2019-05-21 10:05:16.869 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.fullversion=8.0.5.20 - pxa6480sr5fp20-20180802_01(SR5 FP20)
+JRE 1.8.0 Linux amd64-64-Bit Compressed References 20180731_393394 (JIT enabled, AOT enabled)
+OpenJ9   - bd23af8
+OMR      - ca1411c
+IBM      - 98805ca
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+Command-line arguments:  -data /home/acedev/IBM/ACET11/ProcessV2 -os linux -ws gtk -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-05-21 10:05:21.203
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY org.eclipse.ui 2 2 2019-05-21 10:05:29.553
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.adapter.c, page: com.ibm.adapter.c.ui.preferencepage.CPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-05-21 10:05:29.562
+!MESSAGE Invalid preference category path: com.ibm.debug.breakpoints.common.pref.tracepoint (bundle: com.ibm.debug.wsa, page: com.ibm.debug.wsa.WSATracepointPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-05-21 10:05:29.562
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.etools.cobol.preference.ui, page: com.ibm.etools.cobol.preference.ui.preferencepage.CobolPreferencePage)
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-05-21 10:05:32.788
+!MESSAGE /opt/ibm/ace-11.0.0.4/ace mqsifindmqpath
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-05-21 10:05:33.397
+!MESSAGE /opt/mqm
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-05-21 10:05:33.397
+!MESSAGE BIP8071I: Successful command completion. 
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-05-21 10:05:33.397
+!MESSAGE MQ Install location found:/opt/mqm
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2019-05-21 10:06:03.284
+!MESSAGE 
+!SESSION 2019-05-27 09:10:18.327 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.fullversion=8.0.5.20 - pxa6480sr5fp20-20180802_01(SR5 FP20)
+JRE 1.8.0 Linux amd64-64-Bit Compressed References 20180731_393394 (JIT enabled, AOT enabled)
+OpenJ9   - bd23af8
+OMR      - ca1411c
+IBM      - 98805ca
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-05-27 09:10:37.847
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-05-27 09:10:38.382
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY org.eclipse.ui 2 2 2019-05-27 09:10:41.339
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.adapter.c, page: com.ibm.adapter.c.ui.preferencepage.CPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-05-27 09:10:41.339
+!MESSAGE Invalid preference category path: com.ibm.debug.breakpoints.common.pref.tracepoint (bundle: com.ibm.debug.wsa, page: com.ibm.debug.wsa.WSATracepointPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-05-27 09:10:41.339
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.etools.cobol.preference.ui, page: com.ibm.etools.cobol.preference.ui.preferencepage.CobolPreferencePage)
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2019-05-27 09:10:45.058
+!MESSAGE 
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-05-27 09:10:55.302
+!MESSAGE /opt/ibm/ace-11.0.0.4/ace mqsifindmqpath
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-05-27 09:10:56.186
+!MESSAGE /opt/mqm
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-05-27 09:10:56.186
+!MESSAGE BIP8071I: Successful command completion. 
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-05-27 09:10:56.186
+!MESSAGE MQ Install location found:/opt/mqm
+!SESSION 2019-05-27 09:34:47.166 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.fullversion=8.0.5.20 - pxa6480sr5fp20-20180802_01(SR5 FP20)
+JRE 1.8.0 Linux amd64-64-Bit Compressed References 20180731_393394 (JIT enabled, AOT enabled)
+OpenJ9   - bd23af8
+OMR      - ca1411c
+IBM      - 98805ca
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -showlocation -product com.ibm.etools.msgbroker.tooling.ide
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-05-27 09:35:10.102
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.emf.ecore 2 0 2019-05-27 09:35:10.709
+!MESSAGE Both 'com.ibm.etools.javaee.core' and 'com.ibm.etools.mft.service.model' register an extension parser for 'application'
+
+!ENTRY org.eclipse.ui 2 2 2019-05-27 09:35:18.068
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.adapter.c, page: com.ibm.adapter.c.ui.preferencepage.CPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-05-27 09:35:18.077
+!MESSAGE Invalid preference category path: com.ibm.debug.breakpoints.common.pref.tracepoint (bundle: com.ibm.debug.wsa, page: com.ibm.debug.wsa.WSATracepointPreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-05-27 09:35:18.077
+!MESSAGE Invalid preference category path: com.ibm.importer.preferences (bundle: com.ibm.etools.cobol.preference.ui, page: com.ibm.etools.cobol.preference.ui.preferencepage.CobolPreferencePage)
+
+!ENTRY com.ibm.etools.mft.uri 0 0 2019-05-27 09:35:18.765
+!MESSAGE 
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-05-27 09:35:34.728
+!MESSAGE /opt/ibm/ace-11.0.0.4/ace mqsifindmqpath
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-05-27 09:35:35.810
+!MESSAGE /opt/mqm
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-05-27 09:35:35.811
+!MESSAGE BIP8071I: Successful command completion. 
+
+!ENTRY com.ibm.mq.runtime 1 0 2019-05-27 09:35:35.811
+!MESSAGE MQ Install location found:/opt/mqm

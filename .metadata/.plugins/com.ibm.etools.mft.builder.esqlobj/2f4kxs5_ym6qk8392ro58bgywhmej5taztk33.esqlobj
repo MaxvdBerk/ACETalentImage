@@ -1,0 +1,11 @@
+/*EATE FUNCTION Main() RETURNS BOOLE*/
+	BEGIN
+		
+		SET WatsonBearerToken	= Root.JSON.Data."access_token"; 
+		SET	WatsonRefreshToken	= Root.JSON.Data."refresh_token";
+		SET WatsonLifeRemain	= CAST (CURRENT_GMTTIMESTAMP + CAST ((Root.JSON.Data."expires_in" /60) - 1 AS INTERVAL MINUTE ) AS GMTTIMESTAMP); 
+		
+	
+		RETURN TRUE;
+	END;
+

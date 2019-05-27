@@ -1,0 +1,61 @@
+
+
+CREATE COMPUTE MODULE Watson_RequestCompute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		-- CALL CopyMessageHeaders();
+		-- CALL CopyEntireMessage();
+
+		SET OutputRoot.Properties = InputProperties;
+		SET OutputRoot.HTTPRequestHeader.Authorization = 'Bearer ' || WatsonBearerToken ; -- bearer
+		-- SET OutputRoot.HTTPRequestHeader."Content-Type" = 'multipart/form-data; boundary=myBoundary';
+
+		CREATE LASTCHILD OF OutputRoot DOMAIN 'MIME';
+		DECLARE M REFERENCE TO OutputRoot.MIME;
+		CREATE FIELD M."Content-Type" VALUE 'multipart/form-data; boundary=myBoundary';
+
+		CREATE LASTCHILD OF M NAME 'Parts';
+		
+		-- part1
+		DECLARE P1 REFERENCE TO M.Parts;
+		CREATE LASTCHILD OF M.Parts FROM InputRoot.MIME.Parts.Part;
+				
+		-- part2
+		DECLARE P2 REFERENCE TO M.Parts;
+		CREATE LASTCHILD OF M.Parts AS P2 NAME 'Part';
+		SET P2."Content-Disposition" = 'form-data; name="threshold"';
+		CREATE LASTCHILD OF P2 NAME 'Data';
+		CREATE LASTCHILD OF P2.Data DOMAIN('BLOB') PARSE(CAST('0.7' AS BLOB CCSID 1208));
+	
+		-- part3
+		DECLARE P3 REFERENCE TO M.Parts;
+		CREATE LASTCHILD OF M.Parts AS P3 NAME 'Part';
+		SET P3."Content-Disposition" = 'form-data; name="owners"';
+		CREATE LASTCHILD OF P3 NAME 'Data';
+		CREATE LASTCHILD OF P3.Data DOMAIN('BLOB') PARSE(CAST('me' AS BLOB CCSID 1208));
+		-- part4
+		DECLARE P4 REFERENCE TO M.Parts;
+		CREATE LASTCHILD OF M.Parts AS P4 NAME 'Part';
+		SET P4."Content-Disposition" = 'form-data; name="classifier_ids"';
+		CREATE LASTCHILD OF P4 NAME 'Data';
+		CREATE LASTCHILD OF P4.Data DOMAIN('BLOB') PARSE(CAST('VR_V3_786148410' AS BLOB CCSID 1208));
+
+		RETURN TRUE;
+
+	END;
+
+	CREATE PROCEDURE CopyMessageHeaders() BEGIN
+		DECLARE I INTEGER 1;
+		DECLARE J INTEGER;
+		SET J = CARDINALITY(InputRoot.*[]);
+		WHILE I < J DO
+			SET OutputRoot.*[I] = InputRoot.*[I];
+			SET I = I + 1;
+		END WHILE;
+	END;
+
+	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET OutputRoot = InputRoot;
+	END;
+END MODULE;
+
